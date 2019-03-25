@@ -8,7 +8,7 @@ class pagecontorller extends Controller
 {
     public function Home()
     {
-        return view('About');
+        return view('Home');
     }
     public function store(Request $request)
     {

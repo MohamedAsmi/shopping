@@ -15,3 +15,6 @@ Route::get('/', 'pagecontorller@Home');
 
 Route::get('About', 'pagecontorller@Home');
 Route::post('About', 'pagecontorller@store');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
