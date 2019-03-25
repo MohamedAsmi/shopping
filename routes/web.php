@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('Home');
-});
-Route::get('About', function () {
-    return view('About');
-});
+Route::get('/', 'pagecontorller@Home');
+
+Route::get('About', 'pagecontorller@Home');
+Route::post('About', 'pagecontorller@store');
